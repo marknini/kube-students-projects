@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: app-space
+data:
+  DB_HOST: "postgres-service.db-space.svc.cluster.local"
+  DB_PORT: "5432"
+  DB_NAME: "mydb"
+  API_HOST: "0.0.0.0"
+  API_PORT: "5000"
